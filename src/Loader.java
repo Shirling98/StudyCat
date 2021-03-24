@@ -1,6 +1,6 @@
 public class Loader {
 
-    private static Cat getKitten(){
+    public static Cat getKitten(){
         return new Cat(1100);
     }
 
@@ -10,6 +10,8 @@ public class Loader {
         Cat Buba = new Cat();
         Cat Musya = new Cat();
 
+        Cat Stepa = getKitten();
+        System.out.println("Weight kitten Stepa is " + Stepa.getWeight());
 
      //   System.out.println("Color is Buba " + Cat.catColor.ginger);
 
